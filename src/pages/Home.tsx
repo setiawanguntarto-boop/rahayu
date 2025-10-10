@@ -1,13 +1,27 @@
 import { Button } from "@/components/ui/button";
 import WhatsAppMockup from "@/components/WhatsAppMockup";
 import { ExternalLink } from "lucide-react";
+import heroFarmer from "@/assets/hero-farmer.png";
 
 const Home = () => {
   return (
     <main className="flex-grow">
       {/* Hero Banner Section */}
-      <section className="relative flex items-center justify-center pt-24 pb-12">
-        <div className="max-w-7xl mx-auto px-6 py-12 grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative flex items-center justify-center pt-24 pb-12 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url(${heroFarmer})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-background/70"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-6 py-12 grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div>
             <h1 className="text-4xl sm:text-6xl font-extrabold leading-snug mb-5 text-foreground">
               Catat & Kelola Kinerja Kandang{" "}
