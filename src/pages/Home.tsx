@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import WhatsAppMockup from "@/components/WhatsAppMockup";
 import { ExternalLink } from "lucide-react";
 import heroFarmer from "@/assets/hero-farmer.png";
+import whatsappDemo from "@/assets/whatsapp-demo.png";
 
 const Home = () => {
   return (
@@ -54,9 +54,13 @@ const Home = () => {
             </div>
           </div>
 
-          {/* WhatsApp Chat Mockup */}
-          <div className="mt-8 lg:mt-0">
-            <WhatsAppMockup />
+          {/* WhatsApp Demo Image */}
+          <div className="flex items-center justify-center mt-8 lg:mt-0">
+            <img 
+              src={whatsappDemo} 
+              alt="Peternak menggunakan Rahayu Bot di WhatsApp" 
+              className="w-full max-w-lg rounded-3xl shadow-2xl object-cover"
+            />
           </div>
         </div>
       </section>
