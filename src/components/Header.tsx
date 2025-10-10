@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import rahayuLogo from "@/assets/rahayu-logo.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,8 +27,9 @@ const Header = () => {
     <>
       <header className="sticky top-0 z-50 backdrop-blur-lg bg-white/95 shadow-sm">
         <nav className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-          <Link to="/" className="text-2xl font-extrabold tracking-tight text-primary">
-            RAHAYU
+          <Link to="/" className="flex items-center gap-2">
+            <img src={rahayuLogo} alt="Rahayu Logo" className="w-10 h-10" />
+            <span className="text-2xl font-extrabold tracking-tight text-primary">RAHAYU</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -65,9 +67,10 @@ const Header = () => {
         <div className="fixed inset-0 z-40 bg-white/95 backdrop-blur-md md:hidden">
           <div className="p-6">
             <div className="flex justify-between items-center mb-6">
-              <span className="text-2xl font-extrabold tracking-tight text-primary">
-                RAHAYU
-              </span>
+              <div className="flex items-center gap-2">
+                <img src={rahayuLogo} alt="Rahayu Logo" className="w-10 h-10" />
+                <span className="text-2xl font-extrabold tracking-tight text-primary">RAHAYU</span>
+              </div>
               <button
                 onClick={closeMenu}
                 className="p-2 rounded-md hover:bg-secondary transition-colors"
