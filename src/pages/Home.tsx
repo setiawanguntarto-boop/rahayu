@@ -7,23 +7,9 @@ const Home = () => {
   return (
     <main className="flex-grow">
       {/* Hero Banner Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url(${whatsappDemo})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
-        >
-          {/* Gradient overlay for text readability and blending */}
-          <div className="absolute inset-0 bg-gradient-to-r from-background/98 via-background/95 to-background/60"></div>
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-6 py-12 relative z-10">
-          <div className="max-w-2xl">
+      <section className="pt-24 pb-12">
+        <div className="max-w-7xl mx-auto px-6 py-12 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
             <h1 className="text-4xl sm:text-6xl font-extrabold leading-snug mb-5 text-foreground">
               Catat & Kelola Kinerja Kandang{" "}
               <span className="text-primary">lewat WhatsApp</span>
@@ -53,6 +39,15 @@ const Home = () => {
                 </a>
               </Button>
             </div>
+          </div>
+
+          {/* WhatsApp Demo Image */}
+          <div className="flex items-center justify-center mt-8 lg:mt-0">
+            <img 
+              src={whatsappDemo} 
+              alt="Peternak menggunakan Rahayu Bot di WhatsApp" 
+              className="w-full max-w-lg rounded-3xl shadow-2xl object-cover"
+            />
           </div>
         </div>
       </section>
