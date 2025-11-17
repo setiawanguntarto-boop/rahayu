@@ -23,15 +23,27 @@ const Kemitraan = () => {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Bergabunglah dengan perusahaan peternakan terkemuka yang menggunakan Rahayu untuk mengelola ribuan kandang secara efisien.
           </p>
-          <Button
-            asChild
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 rounded-xl text-lg font-bold shadow-lg transform hover:scale-[1.05] transition-all"
-          >
-            <a href="http://wa.me/6289637112147" target="_blank" rel="noopener noreferrer">
-              💼 Hubungi Tim Kemitraan
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 rounded-xl text-lg font-bold shadow-lg transform hover:scale-[1.05] transition-all"
+            >
+              <a href="/erp-broiler">
+                📊 Rahayu untuk Kemitraan
+              </a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="px-8 py-6 rounded-xl text-lg font-bold border-2"
+            >
+              <a href="http://wa.me/6289637112147" target="_blank" rel="noopener noreferrer">
+                💼 Hubungi Tim Kemitraan
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 

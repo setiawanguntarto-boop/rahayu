@@ -10,6 +10,7 @@ import Tentang from "./pages/Tentang";
 import KenapaRahayu from "./pages/KenapaRahayu";
 import TanyaRahayu from "./pages/TanyaRahayu";
 import Kemitraan from "./pages/Kemitraan";
+import ERPBroiler from "./pages/ERPBroiler";
 import SyaratKetentuan from "./pages/SyaratKetentuan";
 import KebijakanPrivasi from "./pages/KebijakanPrivasi";
 import NotFound from "./pages/NotFound";
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/kenapa-rahayu" element={<KenapaRahayu />} />
             <Route path="/tanya-rahayu" element={<TanyaRahayu />} />
             <Route path="/kemitraan" element={<Kemitraan />} />
+            <Route path="/erp-broiler" element={<ERPBroiler />} />
             <Route path="/syarat-ketentuan" element={<SyaratKetentuan />} />
             <Route path="/kebijakan-privasi" element={<KebijakanPrivasi />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
