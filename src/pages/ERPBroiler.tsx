@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Database, Users, FileText, TrendingUp, Shield, Zap } from "lucide-react";
 
 const ERPBroiler = () => {
@@ -132,6 +133,70 @@ const ERPBroiler = () => {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl font-extrabold text-center mb-12 text-foreground">
+            Pertanyaan yang Sering Diajukan
+          </h2>
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1" className="bg-card rounded-lg px-6 border shadow-sm">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                Berapa lama waktu implementasi ERP Broiler?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Waktu implementasi bervariasi tergantung skala peternakan Anda, biasanya berkisar antara 2-4 minggu. Ini mencakup analisis kebutuhan, setup sistem, migrasi data, pelatihan tim, dan pendampingan go live.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="bg-card rounded-lg px-6 border shadow-sm">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                Apakah sistem bisa diakses dari smartphone?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Ya, ERP Broiler dirancang responsif dan dapat diakses dari berbagai perangkat termasuk smartphone, tablet, dan komputer. Selain itu, sistem terintegrasi dengan WhatsApp melalui Rahayu Bot untuk kemudahan akses.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="bg-card rounded-lg px-6 border shadow-sm">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                Bagaimana dengan keamanan data peternakan saya?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Keamanan data adalah prioritas utama kami. Sistem menggunakan enkripsi data tingkat enterprise, backup otomatis harian, dan akses berbasis role untuk memastikan hanya pihak yang berwenang yang dapat mengakses data sensitif.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="bg-card rounded-lg px-6 border shadow-sm">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                Apakah tersedia pelatihan untuk tim saya?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Tentu! Kami menyediakan pelatihan komprehensif untuk semua pengguna sistem, mulai dari peternak lapangan hingga manajemen. Pelatihan mencakup sesi hands-on, dokumentasi lengkap, dan video tutorial.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="bg-card rounded-lg px-6 border shadow-sm">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                Bagaimana sistem dukungan teknis setelah implementasi?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Kami menyediakan dukungan teknis berkelanjutan melalui berbagai channel: WhatsApp, email, dan telepon. Tim support kami siap membantu Anda selama jam kerja, dengan response time maksimal 4 jam untuk issue kritis.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6" className="bg-card rounded-lg px-6 border shadow-sm">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                Apakah data dari sistem lama bisa dimigrasikan?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Ya, kami memfasilitasi migrasi data dari sistem lama Anda ke ERP Broiler. Tim kami akan membantu proses mapping dan transfer data untuk memastikan transisi yang mulus tanpa kehilangan data historis.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
